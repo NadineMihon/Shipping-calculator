@@ -13,21 +13,21 @@
     <main class="main">
         <div class="calculator-wrapper">
             <div class="calculator">
-                <form class="calculator-form">
+                <form id="form" class="calculator-form">
                     <label class="input-field">
                         Город доставки:
-                        <input type="text" placeholder="Введите город" class="input"/>
+                        <input type="text" placeholder="Введите город" id="city" class="input" required/>
                     </label>
                     <label class="input-field">
                         Вес посылки:
-                        <input type="text" placeholder="Введите вес посылки" class="input"/>
+                        <input type="number" placeholder="Введите вес посылки" id="weight" class="input" required/>
                     </label>
                     <div class="button-wrapper">
-                        <button class="button">Рассчитать</button>    
+                        <button id="button" class="button" type="submit">Рассчитать</button>    
                     </div>
                     <label class="input-field">
                         Стоимость доставки:
-                        <input type="text" class="input" readonly/>
+                        <input type="text" id="delivery-cost" class="input" readonly/>
                     </label>
                 </form>
             </div>
